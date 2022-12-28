@@ -1,0 +1,121 @@
+# Here you can define all your data sets by using simple YAML syntax.
+#
+# Documentation for this file format can be found in "The Data Catalog"
+# Link: https://kedro.readthedocs.io/en/stable/data/data_catalog.html
+_csv: &csv
+  type: pandas.CSVDataSet
+  load_args:
+    sep: ','
+  save_args:
+    index: False
+
+_excel: &excel
+  type: pandas.ExcelDataSet
+  save_args:
+    index: True
+
+_text: &text
+  type: text.TextDataSet
+  fs_args:
+    open_args_load:
+        encoding: 'utf-8'
+
+dataset:
+  <<: *csv
+  filepath: C:\Users\DELL\acq\data\01_raw\df.csv
+
+dataset_gojek:
+  <<: *csv
+  filepath: C:\Users\DELL\acq\data\01_raw\Data OOT Gojek.csv
+
+dataset_grab:
+  <<: *csv
+  filepath: C:\Users\DELL\acq\data\01_raw\Data OOT Grab.csv
+
+dropped_dataset:
+  <<: *csv
+  filepath: C:\Users\DELL\acq\data\02_intermediate\dropped_dataset.csv
+
+dropped_dataset_gojek:
+  <<: *csv
+  filepath: C:\Users\DELL\acq\data\02_intermediate\dropped_dataset_gojek.csv
+
+dropped_dataset_grab:
+  <<: *csv
+  filepath: C:\Users\DELL\acq\data\02_intermediate\dropped_dataset_grab.csv
+
+preprocessed_dataset:
+  <<: *csv
+  filepath: C:\Users\DELL\acq\data\03_primary\preprocessed_dataset.csv 
+
+data_train:
+  <<: *csv
+  filepath: C:\Users\DELL\acq\data\05_model_input\data_train.csv 
+
+data_test:
+  <<: *csv
+  filepath: C:\Users\DELL\acq\data\05_model_input\data_test.csv 
+
+label_train:
+  <<: *csv
+  filepath: C:\Users\DELL\acq\data\05_model_input\label_train.csv 
+
+label_test:
+  <<: *csv
+  filepath: C:\Users\DELL\acq\data\05_model_input\label_test.csv 
+
+proba_gojek:
+  <<: *csv
+  filepath: C:\Users\DELL\acq\data\06_models\proba_gojek.csv 
+
+proba_grab:
+  <<: *csv
+  filepath: C:\Users\DELL\acq\data\06_models\proba_grab.csv 
+
+training_results_acqu:
+  <<: *csv
+  filepath: C:\Users\DELL\acq\data\07_model_output\training_results_acq.csv 
+
+testing_results_acqu:
+  <<: *csv
+  filepath: C:\Users\DELL\acq\data\07_model_output\testing_results_acq.csv 
+
+results_acq_final_gojek:
+  <<: *csv
+  filepath: C:\Users\DELL\acq\data\08_reporting\tresults_acq_final_gojek.csv 
+
+results_acq_final_grab:
+  <<: *csv
+  filepath: C:\Users\DELL\acq\data\08_reporting\tresults_acq_final_grab.csv 
+
+distribution_gojek:
+  <<: *csv
+  filepath: C:\Users\DELL\acq\data\08_reporting\distribution_gojek.csv
+
+distribution_grab:
+  <<: *csv
+  filepath: C:\Users\DELL\acq\data\08_reporting\distribution_grab.csv
+
+confusion_matrix:
+  <<: *text
+  filepath: C:\Users\DELL\acq\data\08_reporting\confusion_matrix.txt 
+
+metrics_evaluation:
+  <<: *text
+  filepath: C:\Users\DELL\acq\data\08_reporting\metrics_evaluation.txt 
+
+training_results_acq_final:
+  <<: *csv
+  filepath: C:\Users\DELL\acq\data\08_reporting\training_results_acq_final.csv 
+
+distribution_training:
+  <<: *csv
+  filepath: C:\Users\DELL\acq\data\08_reporting\distribution_training.csv 
+
+testing_results_acq_final:
+  <<: *csv
+  filepath: C:\Users\DELL\acq\data\08_reporting\testing_results_acq_final.csv 
+
+distribution_testing:
+  <<: *csv
+  filepath: C:\Users\DELL\acq\data\08_reporting\distribution_testing.csv 

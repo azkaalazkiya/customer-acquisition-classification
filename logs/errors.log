@@ -1,0 +1,38 @@
+2022-12-11 18:54:52,215 - kedro.pipeline.node - ERROR - Node 'model_acq_node: model_acq([data_train,data_test,label_train,label_test]) -> [training_results_acq,testing_results_acq]' failed with error: 
+Invalid classes inferred from unique values of `y`.  Expected: [    0     1     2 ... 71889 71890 71891], got [-1.00000000e+00  0.00000000e+00  1.00000000e+00 ...  2.82609390e+09
+  5.54652859e+09             nan]
+2022-12-11 19:06:42,371 - kedro.pipeline.node - ERROR - Node 'model_acq_node: model_acq([data_train,data_test,label_train,label_test]) -> [training_results_acq,testing_results_acq]' failed with error: 
+Invalid classes inferred from unique values of `y`.  Expected: [    0     1     2 ... 71782 71783 71784], got [-1.00000000e+00  0.00000000e+00  1.00000000e+00 ...  2.86854800e+09
+  3.43558898e+09             nan]
+2022-12-28 12:46:04,132 - kedro.pipeline.node - ERROR - Node 'model_acq_node: model_acq([data_train,data_test,label_train,label_test]) -> [training_results_acqu,testing_results_acqu]' failed with error: 
+Invalid classes inferred from unique values of `y`.  Expected: [    0     1     2 ... 71782 71783 71784], got [-1.00000000e+00  0.00000000e+00  1.00000000e+00 ...  2.86854800e+09
+  3.43558898e+09             nan]
+2022-12-28 12:52:25,350 - kedro.pipeline.node - ERROR - Node 'model_acq_node: model_acq([data_train,data_test,label_train,label_test]) -> [training_results_acqu,testing_results_acqu]' failed with error: 
+Invalid classes inferred from unique values of `y`.  Expected: [    0     1     2 ... 71782 71783 71784], got [-1.00000000e+00  0.00000000e+00  1.00000000e+00 ...  2.86854800e+09
+  3.43558898e+09             nan]
+2022-12-28 13:03:02,636 - kedro.pipeline.node - ERROR - Node 'model_acq_node: model_acq([data_train,data_test,label_train,label_test]) -> [training_results_acqu,testing_results_acqu]' failed with error: 
+Invalid classes inferred from unique values of `y`.  Expected: [    0     1     2 ... 71782 71783 71784], got [-1.00000000e+00  0.00000000e+00  1.00000000e+00 ...  2.86854800e+09
+  3.43558898e+09             nan]
+2022-12-28 13:07:46,982 - kedro.pipeline.node - ERROR - Node 'model_acq_node: model_acq([data_train,data_test,label_train,label_test]) -> [training_results_acqu,testing_results_acqu]' failed with error: 
+Invalid classes inferred from unique values of `y`.  Expected: [    0     1     2 ... 71782 71783 71784], got [-1.00000000e+00  0.00000000e+00  1.00000000e+00 ...  2.86854800e+09
+  3.43558898e+09             nan]
+2022-12-28 13:25:00,468 - kedro.pipeline.node - ERROR - Node 'model_acq_node: model_acq([data_train,data_test,label_train,label_test]) -> [training_results_acqu,testing_results_acqu]' failed with error: 
+y should be a 1d array, got an array of shape (179726, 12) instead.
+2022-12-28 13:25:46,978 - kedro.pipeline.node - ERROR - Node 'model_acq_node: model_acq([data_train,data_test,label_train,label_test]) -> [training_results_acqu,testing_results_acqu]' failed with error: 
+y should be a 1d array, got an array of shape (179726, 12) instead.
+2022-12-28 13:26:10,007 - kedro.pipeline.node - ERROR - Node 'model_acq_node: model_acq([data_train,data_test,label_train,label_test]) -> [training_results_acqu,testing_results_acqu]' failed with error: 
+y should be a 1d array, got an array of shape (179726, 12) instead.
+2022-12-28 13:26:28,454 - kedro.pipeline.node - ERROR - Node 'model_acq_node: model_acq([data_train,data_test,label_train,label_test]) -> [training_results_acqu,testing_results_acqu]' failed with error: 
+y should be a 1d array, got an array of shape (179726, 12) instead.
+2022-12-28 13:29:15,485 - kedro.pipeline.node - ERROR - Node 'model_acq_node: model_acq([data_train,data_test,label_train,label_test]) -> [training_results_acqu,testing_results_acqu]' failed with error: 
+y should be a 1d array, got an array of shape (179726, 12) instead.
+2022-12-28 13:29:58,679 - kedro.pipeline.node - ERROR - Node 'model_acq_node: model_acq([data_train,data_test,label_train,label_test]) -> [training_results_acqu,testing_results_acqu]' failed with error: 
+y should be a 1d array, got an array of shape (179726, 12) instead.
+2022-12-28 13:35:06,232 - kedro.pipeline.node - ERROR - Node 'model_acq_node: model_acq([data_train,data_test,label_train,label_test]) -> [training_results_acqu,testing_results_acqu]' failed with error: 
+need to call fit or load_model beforehand
+2022-12-28 13:36:20,381 - kedro.pipeline.node - ERROR - Node 'model_acq_node: model_acq([data_train,data_test,label_train,label_test]) -> [training_results_acqu,testing_results_acqu]' failed with error: 
+y should be a 1d array, got an array of shape (179726, 12) instead.
+2022-12-28 13:36:47,078 - kedro.pipeline.node - ERROR - Node 'model_acq_node: model_acq([data_train,data_test,label_train,label_test]) -> [training_results_acqu,testing_results_acqu]' failed with error: 
+fit() missing 1 required positional argument: 'y'
+2022-12-28 13:37:37,503 - kedro.pipeline.node - ERROR - Node 'model_acq_node: model_acq([data_train,data_test,label_train,label_test]) -> [training_results_acqu,testing_results_acqu]' failed with error: 
+y should be a 1d array, got an array of shape (179726, 12) instead.
